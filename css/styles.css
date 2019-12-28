@@ -1,0 +1,158 @@
+/*************************** TAG SELECTOR ***************************/
+body {
+  margin: 0;
+  text-align: center;
+  font-family: 'Merriweather', serif;
+  color: #40514E;
+}
+
+h1 {
+  margin: 50px auto 0 auto;
+  /* margin: 0 auto 0 auto=make it in center ~ text-align: center
+  margin: 0 auto 0 auto;
+  width: 10%; */
+  font-family: 'Sacramento', cursive;
+  font-size: 5.625rem;
+  /* 16px = 100% = 1 em --> 562.5% = 90px = 5.625em
+  rem = if change parent/container then nothing happens, should use rem over %
+  and em */
+  color: #66BFBF;
+}
+
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.5rem;
+  color: #66BFBF;
+  padding-bottom: 10px;
+  font-weight: normal;
+}
+
+h3 {
+  font-family: 'Montserrat', sans-serif;
+  color: #11999E;
+}
+
+p {
+  line-height: 2;
+}
+
+span {
+  text-decoration: underline;
+}
+
+hr {
+  border: dotted #EAF6F6 6px;
+  border-bottom: none;
+  width: 4%;
+  margin: 100px auto;
+}
+
+/*************************** CLASS SELECTOR ***************************/
+.top-container {
+  padding-top: 100px;
+  position: relative;
+  /* because it is the parent of the cloud and if we make its position
+  abolute, then the thing containing it must have position relative, or else it will apply to the body*/
+  background-color: #E4F9F5;
+}
+
+.middle-container {
+  margin: 100px 0;
+}
+
+.bottom-container {
+  background-color: #66BFBF;
+  padding: 50px 0 20px;
+}
+
+.bottom-cloud {
+  position: absolute;
+  bottom: 300px;
+  left: 250px;
+}
+
+.top-cloud {
+  position: absolute;
+  right: 300px;
+  top: 40px;
+}
+
+.footer-link {
+  color: #11999E;
+}
+
+.skill-row {
+  width: 50%;
+  margin: 100px auto 100px auto;
+  text-align: left;
+}
+
+.python {
+  width: 25%;
+  margin-right: 30px;
+  float: left;
+  /* float this image to the left and anything to the right will
+  wrap around it */
+  /* Therefore, clear: left ~ anti-float: left where that element will not care
+  if anything to its left is floating like this .python here */
+}
+
+.front-end {
+  width: 25%;
+  margin-left: 30px;
+  float: right;
+  /* float this image to the right and anything to the left will
+  wrap around it */
+  /* Therefore, clear: right ~ anti-float: right where that element will not care
+  if anything to its right is floating like this .front-end here */
+}
+
+.R {
+  width: 25%;
+  margin-right: 30px;
+  float: left;
+}
+
+.button {
+  font-family: 'Montserrat', sans-serif;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  -webkit-border-radius: 8;
+  -moz-border-radius: 8;
+  border-radius: 8px;
+  background: rgb(17, 205, 212);
+  background-image: -moz-linear-gradient(top, #11cdd4, #11999e);
+  background-image: -webkit-linear-gradient(top, #11cdd4, #11999e);
+  background-image: -o-linear-gradient(top, #11cdd4, #11999e);
+  background-image: -ms-linear-gradient(top, #11cdd4, #11999e);
+  background-image: linear-gradient(to bottom, #11cdd4, #11999e);
+}
+
+.button:hover {
+  text-decoration: none;
+  background: #30e3cb;
+  background-image: -moz-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: -webkit-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: -o-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: -ms-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: linear-gradient(to bottom, #30e3cb, #2bc4ad);
+}
+
+a {
+  font-family: 'Montserrat', sans-serif;
+  color: #EAF6F6;
+  margin: 10px 20px;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #EAF6F6;
+}
+
+.copyright {
+  color: #EAF6F6;
+  font-size: 0.75 em;
+  padding: 20px 0;
+}
